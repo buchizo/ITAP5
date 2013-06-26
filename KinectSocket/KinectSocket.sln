@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinectSocket", "KinectSocket\KinectSocket.csproj", "{B40CD3C3-49F8-4824-9F03-F009ECD1C3CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Player", "Player\Player.csproj", "{62903B8D-0839-4036-9B72-778F10BA8C61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B40CD3C3-49F8-4824-9F03-F009ECD1C3CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40CD3C3-49F8-4824-9F03-F009ECD1C3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40CD3C3-49F8-4824-9F03-F009ECD1C3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40CD3C3-49F8-4824-9F03-F009ECD1C3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62903B8D-0839-4036-9B72-778F10BA8C61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62903B8D-0839-4036-9B72-778F10BA8C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62903B8D-0839-4036-9B72-778F10BA8C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62903B8D-0839-4036-9B72-778F10BA8C61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

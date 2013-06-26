@@ -1,0 +1,10 @@
+﻿<Window x:Class="シナリオD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:k="http://schemas.microsoft.com/kinect/2013"
+        Title="MainWindow" Height="768" Width="1024" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <k:KinectRegion x:Name="kinectRegion">
+			<k:KinectTileButton Click="KinectTileButton_Click" Label="Press!" />
+		</k:KinectRegion>
+	</Grid>
+</Window>

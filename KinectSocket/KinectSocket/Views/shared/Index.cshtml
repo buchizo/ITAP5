@@ -1,0 +1,35 @@
+@using System.Web.Optimization
+@using BootstrapSupport
+@model System.Collections.IEnumerable   
+@section head
+{
+	@Scripts.Render("~/js")
+	@Scripts.Render("~/bundles/signalR")
+	<script src="signalr/hubs" type="text/javascript"></script>
+	<script type="text/javascript">
+		var connection = $.hubConnection();
+		var kinect = connection.createHubProxy('kinect');
+		kinect.on('Received', function (data) {
+			var canvas = document.getElementById('kinectcanvas');
+			if (!canvas || !canvas.getContext) { return false; }
+			var ctx = canvas.getContext('2d');
+			ctx.clearRect(0, 0, 800, 600);
+			for (var i = 0; i < data.length; i++) {
+				ctx.beginPath();
+				ctx.strokeStyle = '#ff0000';
+				ctx.fillStyle = '#ff0000';
+				ctx.fillRect(data[i].x/4, data[i].y/4, 10, 10);
+				ctx.closePath();
+			}
+			ctx.stroke();
+			});
+			connection.start();
+		$(document).ready(function() {
+		});
+	</script>
+}
+
+<h1>ƒTƒ“ƒvƒ‹</h1>
+<canvas id="kinectcanvas" style="width: 1024px; height: 768px; border: black 1px solid;">
+	
+</canvas>
